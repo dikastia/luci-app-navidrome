@@ -7,8 +7,13 @@ LUCI_TITLE:=LuCI Spp for Navidrome
 LUCI_DEPENDS:=
 
 PKG_NAME:=luci-app-navidrome
-PKG_VERSION:=1
+PKG_VERSION:=1.1
 PKG_RELEASE:=1
+
+define Package/luci-app-navidrome/conffiles
+/etc/config/navidrome
+/etc/navidrome
+endef
 
 include $(TOPDIR)/feeds/luci/luci.mk
 
