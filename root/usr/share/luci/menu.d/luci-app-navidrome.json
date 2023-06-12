@@ -1,0 +1,18 @@
+{
+  "admin/nas/": {
+    "title": "NAS",
+    "order": 30,
+    "action": {
+      "type": "firstchild"
+    }
+  },
+
+  "admin/nas/navidrome": {
+    "title": "Nvidrome",
+    "order": 4,
+    "action": {
+      "type": "view",
+      "path": "navidrome"
+    }
+  }
+}

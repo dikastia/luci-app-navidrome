@@ -1,0 +1,107 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ko_KR\n"
+"X-Generator: Poedit 2.3.1\n"
+
+msgid "Navidrome is Running."
+msgstr "Navidrome 실행중."
+
+msgid "Navidrome is Stopped."
+msgstr "Navidrome 정지됨."
+
+msgid "Open Navidrome"
+msgstr "Navidrome 열기"
+
+msgid "Navidrome is a self-hosted, open source music server and streamer.<br/>It gives you freedom to listen to your music collection from any browser or mobile device.<br/><br/>"
+msgstr "Navidrome은 자체 호스팅, 오픈 소스 음악 서버 및 스트리머입니다.<br/>브라우저나 모바일 장치에서 음악 컬렉션을 자유롭게 들을 수 있습니다.<br/><br/>"
+
+msgid "Service"
+msgstr "서비스"
+
+msgid "Path"
+msgstr "경로"
+
+msgid "Navidrome Config"
+msgstr "Navidrome 설정"
+
+msgid "Navidrome Config File"
+msgstr "Navidrome 설정 파일"
+
+msgid "Service Enable"
+msgstr "서비스 사용"
+
+msgid "Program Path"
+msgstr "프로그램 경로"
+
+msgid "Data Folder"
+msgstr "데이터 폴더"
+
+msgid "folder to store application data (DB, cache...)"
+msgstr "데이터 저장 폴더 (DB, cache...)"
+
+msgid "Music Folder"
+msgstr "음악 폴더"
+
+msgid "folder where your music is stored"
+msgstr "음악 저장된 폴더"
+
+msgid "Port"
+msgstr "포트"
+
+msgid "HTTP port Navidrome will use (default 4533)"
+msgstr "Navidrome HTTP 포트 (기본 4533)"
+
+msgid "Enable Transcoding Config"
+msgstr "트랜스코딩 설정 사용"
+
+msgid "Enables Transcoding Configuration in the UI"
+msgstr "Web UI에서 트랜스코딩 설정을 사용"
+
+msgid "folder where your music is stored"
+msgstr "음악 저장된 폴더"
+
+msgid "Port"
+msgstr "포트"
+
+msgid "HTTP port Navidrome will use (default 4533)"
+msgstr "Navidrome HTTP 포트 (기본 4533)"
+
+msgid "Image Cache Size (MB)"
+msgstr "이미지 캐쉬 크기 (MB)"
+
+msgid "size of image (art work) cache. set to 0 to disable cache"
+msgstr "이미지 캐쉬 크기 (표지), 캐시를 비활성화하려면 0으로 설정하십시오"
+
+msgid "TransCoding Cache Size (MB)"
+msgstr "트랜스코딩 캐쉬 크기 (MB)"
+
+msgid "size of transcoding cache. set to 0 to disable cache"
+msgstr "트랜스코딩 캐쉬 크기, 캐시를 비활성화하려면 0으로 설정하십시오"
+
+msgid "Log Level"
+msgstr "로그 레벨"
+
+msgid "Change Background Image"
+msgstr "배경 이미지 변경"
+
+msgid "Default : random music image from Unsplash.com"
+msgstr "기본 : unsplash.com의 임의의 음악 이미지"
+
+msgid "backaground image URL"
+msgstr "배경 이미지 주소"
+
+msgid "URL to a backaground image used in the Login page"
+msgstr "로그인 페이지에서 사용된는 배경 이미지 URL"
+
+msgid "Please see available options to customize Navidrome for your needs at."
+msgstr "Navidrome을 상세 설정을 하려면 아래의 주소의 사용 가능한 옵션을 참조하십시오"
+
+

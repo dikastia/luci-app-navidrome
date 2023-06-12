@@ -1,0 +1,14 @@
+config navidrome 'navidrome'
+	option enabled '1'
+	option user 'root'
+	option prog '/usr/bin/navidrome'
+	option port '4533'
+	option datafolder '/etc/navidrome/'
+	option musicfolder '/music'
+	option imagecachesize '0'
+	option transcodingcachesize '0'
+	option loglevel 'info'
+	option use_bg_path 'URL'
+	option enabletranscodingconfig '1'
+
+

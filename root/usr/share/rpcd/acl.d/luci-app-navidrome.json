@@ -1,0 +1,24 @@
+{
+  "luci-app-navidrome": {
+    "description": "Grant UCI access to LuCI app Navidrome",
+    "read": {
+			"file": {
+				"/etc/navidrome/navidrome.toml": [ "read" ],
+				"/usr/bin/navidrome": [ "exec" ]
+			},
+			"ubus": {
+				"uci": [ "get" ]
+			},
+			"uci": [ "navidrome" ]
+    },
+    "write": {
+			"file": {
+				"/etc/navidrome/navidrome.toml": [ "write" ]
+			},
+			"ubus": {
+				"uci": [ "set", "commit"]
+			},
+			"uci": [ "navidrome" ]
+    }
+  }
+}
