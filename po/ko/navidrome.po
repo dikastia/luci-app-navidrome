@@ -26,9 +26,6 @@ msgstr "Navidrome은 자체 호스팅, 오픈 소스 음악 서버 및 스트리
 msgid "Service"
 msgstr "서비스"
 
-msgid "Path"
-msgstr "경로"
-
 msgid "Navidrome Config"
 msgstr "Navidrome 설정"
 
