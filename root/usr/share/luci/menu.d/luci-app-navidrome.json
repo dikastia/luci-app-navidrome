@@ -9,7 +9,7 @@
 
   "admin/nas/navidrome": {
     "title": "Nvidrome",
-    "order": 4,
+    "order": 20,
     "action": {
       "type": "view",
       "path": "navidrome"

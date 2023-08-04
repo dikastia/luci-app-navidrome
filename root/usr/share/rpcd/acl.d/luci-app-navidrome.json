@@ -3,8 +3,7 @@
     "description": "Grant UCI access to LuCI app Navidrome",
     "read": {
 			"file": {
-				"/etc/navidrome/navidrome.toml": [ "read" ],
-				"/usr/bin/navidrome": [ "exec" ]
+				"/etc/navidrome/navidrome.toml": [ "read" ]
 			},
 			"ubus": {
 				"uci": [ "get" ]

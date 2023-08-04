@@ -16,32 +16,25 @@ return view.extend({
 	load: function() {
 		return Promise.all([
 			L.resolveDefault(callServiceList('navidrome')),
-			L.resolveDefault(fs.exec('/usr/bin/navidrome', ['-v']), null),
 			uci.load('navidrome'),
 		]);
 	},
   render: function(res) {
 		var m, s, o, stat;
 	
-		var v = '';
-		if (res[1] && res[1].code === 0) {
-			v = res[1].stdout.trim();
-		}
-
 		var port = uci.get('navidrome', 'navidrome','port');
 		var running = Object.keys(res[0].instances || {}).length > 0;
 		var stat = '<b><font color="red">' + _("Navidrome is Stopped.") + '</font></b>';
 		if (running) {
-			stat = '<b><font color="green">' + _("Navidrome is Running.") + '</font></b>　<a href="http://' + window.location.hostname + ':' + port + '" target="_blank" style="background: gray; color:black; padding:2px; border-radius: 5px; text-decoration: none;">' + _('Open Navidrome') + '</a>';
+			stat = '<b><font color="green">' + _("Navidrome is Running.") + '</font></b>　　<a href="http://' + window.location.hostname + ':' + port + '" target="_blank" style="background: gray; color:black; padding:2px; border-radius: 5px; text-decoration: none;">' + _('Open Navidrome') + '</a>';
         }
-		m = new form.Map('navidrome', "Navidrome　Ver:" + v, 
+		m = new form.Map('navidrome', "Navidrome", 
 		_('Navidrome is a self-hosted, open source music server and streamer.<br/>It gives you freedom to listen to your music collection from any browser or mobile device.<br/><br/>'));
 
 
 		s = m.section(form.TypedSection, 'navidrome', stat);
 		s.anonymous = true;
 		s.tab('service',  _('Service'));
-		s.tab('path',  _('Path'));
 		s.tab('config',  _('Navidrome Config'));
 		s.tab('configfile',  _('Navidrome Config File'));
 		
@@ -53,23 +46,22 @@ return view.extend({
 			o.placeholder = "/usr/bin/navidrome";
 			o.rmempty = false;
 			
-			
-		o = s.taboption('path', form.Value, 'datafolder', _('Data Folder'), _('folder to store application data (DB, cache...)'));
-			o.default = "/etc/navidrome";
-			o.placeholder = "/etc/navidrome";
-			o.rmempty = false;
-			
-		o = s.taboption('path', form.Value, 'musicfolder', _('Music Folder'),_('folder where your music is stored'));
-			o.default = "/music";
-			o.placeholder = "/music";
-			o.rmempty = false;
-
-		o = s.taboption('config', form.Value, 'port', _('Port'),
+		o = s.taboption('service', form.Value, 'port', _('Port'),
 			_('HTTP port Navidrome will use (default 4533)'));
 			o.default = "4533";
 			o.placeholder = "4533";
 			o.rmempty = false;
+					
+		o = s.taboption('service',form.Value, 'datafolder', _('Data Folder'), _('folder to store application data (DB, cache...)'));
+			o.default = "/etc/navidrome";
+			o.placeholder = "/etc/navidrome";
+			o.rmempty = false;
 			
+		o = s.taboption('service', form.Value, 'musicfolder', _('Music Folder'),_('folder where your music is stored'));
+			o.default = "/music";
+			o.placeholder = "/music";
+			o.rmempty = false;
+
 		o = s.taboption('config',form.Flag, 'enabletranscodingconfig', _('Enable Transcoding Config'),
 			_('Enables Transcoding Configuration in the UI'));
 			
